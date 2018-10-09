@@ -14,6 +14,8 @@
 		CF06CCFF216CA44E009C22CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF06CCFD216CA44E009C22CB /* LaunchScreen.storyboard */; };
 		CF06CD02216CA44E009C22CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD01216CA44E009C22CB /* main.m */; };
 		CF06CD0C216CA44E009C22CB /* OrderSoupOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD0B216CA44E009C22CB /* OrderSoupOCTests.m */; };
+		CF06CD22216CA612009C22CB /* OSListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD21216CA612009C22CB /* OSListTableViewController.m */; };
+		CF06CD25216CA813009C22CB /* OSAddOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD24216CA813009C22CB /* OSAddOneViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,11 @@
 		CF06CD07216CA44E009C22CB /* OrderSoupOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderSoupOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF06CD0B216CA44E009C22CB /* OrderSoupOCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderSoupOCTests.m; sourceTree = "<group>"; };
 		CF06CD0D216CA44E009C22CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF06CD16216CA490009C22CB /* OrderSoupOC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OrderSoupOC.entitlements; sourceTree = "<group>"; };
+		CF06CD20216CA612009C22CB /* OSListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSListTableViewController.h; sourceTree = "<group>"; };
+		CF06CD21216CA612009C22CB /* OSListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSListTableViewController.m; sourceTree = "<group>"; };
+		CF06CD23216CA813009C22CB /* OSAddOneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSAddOneViewController.h; sourceTree = "<group>"; };
+		CF06CD24216CA813009C22CB /* OSAddOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSAddOneViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +88,14 @@
 		CF06CCF1216CA44B009C22CB /* OrderSoupOC */ = {
 			isa = PBXGroup;
 			children = (
+				CF06CD16216CA490009C22CB /* OrderSoupOC.entitlements */,
 				CF06CCF2216CA44C009C22CB /* AppDelegate.h */,
 				CF06CCF3216CA44C009C22CB /* AppDelegate.m */,
 				CF06CCF5216CA44C009C22CB /* ViewController.h */,
 				CF06CCF6216CA44C009C22CB /* ViewController.m */,
 				CF06CCF8216CA44C009C22CB /* Main.storyboard */,
+				CF06CD1A216CA5B9009C22CB /* OrderSoup */,
+				CF06CD17216CA5B9009C22CB /* Share */,
 				CF06CCFB216CA44E009C22CB /* Assets.xcassets */,
 				CF06CCFD216CA44E009C22CB /* LaunchScreen.storyboard */,
 				CF06CD00216CA44E009C22CB /* Info.plist */,
@@ -101,6 +111,56 @@
 				CF06CD0D216CA44E009C22CB /* Info.plist */,
 			);
 			path = OrderSoupOCTests;
+			sourceTree = "<group>";
+		};
+		CF06CD17216CA5B9009C22CB /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				CF06CD18216CA5B9009C22CB /* Manager */,
+				CF06CD19216CA5B9009C22CB /* Data */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		CF06CD18216CA5B9009C22CB /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		CF06CD19216CA5B9009C22CB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CF06CD1A216CA5B9009C22CB /* OrderSoup */ = {
+			isa = PBXGroup;
+			children = (
+				CF06CD1B216CA5B9009C22CB /* VC */,
+				CF06CD1C216CA5B9009C22CB /* View */,
+			);
+			path = OrderSoup;
+			sourceTree = "<group>";
+		};
+		CF06CD1B216CA5B9009C22CB /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				CF06CD20216CA612009C22CB /* OSListTableViewController.h */,
+				CF06CD21216CA612009C22CB /* OSListTableViewController.m */,
+				CF06CD23216CA813009C22CB /* OSAddOneViewController.h */,
+				CF06CD24216CA813009C22CB /* OSAddOneViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		CF06CD1C216CA5B9009C22CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +212,11 @@
 				TargetAttributes = {
 					CF06CCEE216CA44B009C22CB = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 					CF06CD06216CA44E009C22CB = {
 						CreatedOnToolsVersion = 10.0;
@@ -206,6 +271,8 @@
 				CF06CCF7216CA44C009C22CB /* ViewController.m in Sources */,
 				CF06CD02216CA44E009C22CB /* main.m in Sources */,
 				CF06CCF4216CA44C009C22CB /* AppDelegate.m in Sources */,
+				CF06CD25216CA813009C22CB /* OSAddOneViewController.m in Sources */,
+				CF06CD22216CA612009C22CB /* OSListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,14 +430,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = OrderSoupOC/OrderSoupOC.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = KYACQ4K486;
 				INFOPLIST_FILE = OrderSoupOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dawn.OrderSoupOC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gome.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = deceloperTest;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -379,14 +449,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = OrderSoupOC/OrderSoupOC.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = KYACQ4K486;
 				INFOPLIST_FILE = OrderSoupOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dawn.OrderSoupOC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gome.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = deceloperTest;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
