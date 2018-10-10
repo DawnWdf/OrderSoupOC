@@ -61,7 +61,7 @@
     }
     
     //4.Configure the properties of this object that relate to the user’s current activity.
-    userActivity.userInfo = @{@"key_ua":@"巴拉巴拉小魔仙"};
+    userActivity.userInfo = @{@"key_ua":@"巴拉巴拉小魔仙"};//这里最好放置有关的所有参数，这样有利于接收userActivityi信息后还原
     userActivity.needsSave = YES;
     
     //5.For user activity objects configured for search or public indexing, configure the contentAttributeSet, keywords, or webpageURL properties so that Spotlight can index the object.
