@@ -43,5 +43,9 @@
 	</array>
 	<key>NSSiriUsageDescription</key>
 	<string>siri usage description</string>
+	<key>NSUserActivityTypes</key>
+	<array>
+		<string>com.orderSoupOC.createAUserActivity</string>
+	</array>
 </dict>
 </plist>

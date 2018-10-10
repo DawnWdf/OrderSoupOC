@@ -50,4 +50,34 @@
 }
 
 
+
+// Called on the main thread as soon as the user indicates they want to continue an activity in your application. The NSUserActivity object may not be available instantly,
+// so use this as an opportunity to show the user that an activity will be continued shortly.
+// For each application:willContinueUserActivityWithType: invocation, you are guaranteed to get exactly one invocation of application:continueUserActivity: on success,
+// or application:didFailToContinueUserActivityWithType:error: if an error was encountered.
+- (BOOL)application:(UIApplication *)application willContinueUserActivityWithType:(NSString *)userActivityType NS_AVAILABLE_IOS(8_0) {
+ 
+    return YES;
+}
+
+// Called on the main thread after the NSUserActivity object is available. Use the data you stored in the NSUserActivity object to re-create what the user was doing.
+// You can create/fetch any restorable objects associated with the user activity, and pass them to the restorationHandler. They will then have the UIResponder restoreUserActivityState: method
+// invoked with the user activity. Invoking the restorationHandler is optional. It may be copied and invoked later, and it will bounce to the main thread to complete its work and call
+// restoreUserActivityState on all objects.
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void(^)(NSArray<id<UIUserActivityRestoring>> * __nullable restorableObjects))restorationHandler NS_AVAILABLE_IOS(8_0) {
+
+    restorationHandler([(UINavigationController *)self.window.rootViewController viewControllers]);
+    return YES;
+}
+
+// If the user activity cannot be fetched after willContinueUserActivityWithType is called, this will be called on the main thread when implemented.
+- (void)application:(UIApplication *)application didFailToContinueUserActivityWithType:(NSString *)userActivityType error:(NSError *)error NS_AVAILABLE_IOS(8_0) {
+    NSLog(@"%s",__func__);
+
+}
+
+// This is called on the main thread when a user activity managed by UIKit has been updated. You can use this as a last chance to add additional data to the userActivity.
+- (void)application:(UIApplication *)application didUpdateUserActivity:(NSUserActivity *)userActivity NS_AVAILABLE_IOS(8_0){
+    NSLog(@"%s",__func__);
+}
 @end
