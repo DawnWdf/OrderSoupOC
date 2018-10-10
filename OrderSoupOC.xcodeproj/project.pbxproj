@@ -16,6 +16,13 @@
 		CF06CD0C216CA44E009C22CB /* OrderSoupOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD0B216CA44E009C22CB /* OrderSoupOCTests.m */; };
 		CF06CD22216CA612009C22CB /* OSListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD21216CA612009C22CB /* OSListTableViewController.m */; };
 		CF06CD25216CA813009C22CB /* OSAddOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD24216CA813009C22CB /* OSAddOneViewController.m */; };
+		CF06CD37216DAAD9009C22CB /* OrderSoupKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF06CD2E216DAAD7009C22CB /* OrderSoupKit.framework */; };
+		CF06CD3E216DAAD9009C22CB /* OrderSoupKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD3D216DAAD9009C22CB /* OrderSoupKitTests.m */; };
+		CF06CD40216DAAD9009C22CB /* OrderSoupKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CF06CD30216DAAD8009C22CB /* OrderSoupKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF06CD43216DAAD9009C22CB /* OrderSoupKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF06CD2E216DAAD7009C22CB /* OrderSoupKit.framework */; };
+		CF06CD44216DAAD9009C22CB /* OrderSoupKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF06CD2E216DAAD7009C22CB /* OrderSoupKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CF06CD4D216DAAFE009C22CB /* OSSiriAuthorizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD27216DA635009C22CB /* OSSiriAuthorizationManager.m */; };
+		CF06CD4E216DAC65009C22CB /* OSSiriAuthorizationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CF06CD26216DA635009C22CB /* OSSiriAuthorizationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +33,42 @@
 			remoteGlobalIDString = CF06CCEE216CA44B009C22CB;
 			remoteInfo = OrderSoupOC;
 		};
+		CF06CD38216DAAD9009C22CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF06CCE7216CA44B009C22CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF06CD2D216DAAD7009C22CB;
+			remoteInfo = OrderSoupKit;
+		};
+		CF06CD3A216DAAD9009C22CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF06CCE7216CA44B009C22CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF06CCEE216CA44B009C22CB;
+			remoteInfo = OrderSoupOC;
+		};
+		CF06CD41216DAAD9009C22CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF06CCE7216CA44B009C22CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF06CD2D216DAAD7009C22CB;
+			remoteInfo = OrderSoupKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF06CD48216DAAD9009C22CB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CF06CD44216DAAD9009C22CB /* OrderSoupKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CF06CCEF216CA44B009C22CB /* OrderSoupOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderSoupOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +89,14 @@
 		CF06CD21216CA612009C22CB /* OSListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSListTableViewController.m; sourceTree = "<group>"; };
 		CF06CD23216CA813009C22CB /* OSAddOneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSAddOneViewController.h; sourceTree = "<group>"; };
 		CF06CD24216CA813009C22CB /* OSAddOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSAddOneViewController.m; sourceTree = "<group>"; };
+		CF06CD26216DA635009C22CB /* OSSiriAuthorizationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSSiriAuthorizationManager.h; sourceTree = "<group>"; };
+		CF06CD27216DA635009C22CB /* OSSiriAuthorizationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSSiriAuthorizationManager.m; sourceTree = "<group>"; };
+		CF06CD2E216DAAD7009C22CB /* OrderSoupKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OrderSoupKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF06CD30216DAAD8009C22CB /* OrderSoupKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderSoupKit.h; sourceTree = "<group>"; };
+		CF06CD31216DAAD8009C22CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF06CD36216DAAD8009C22CB /* OrderSoupKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderSoupKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF06CD3D216DAAD9009C22CB /* OrderSoupKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderSoupKitTests.m; sourceTree = "<group>"; };
+		CF06CD3F216DAAD9009C22CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF06CD43216DAAD9009C22CB /* OrderSoupKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +112,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF06CD2B216DAAD7009C22CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF06CD33216DAAD8009C22CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF06CD37216DAAD9009C22CB /* OrderSoupKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +138,8 @@
 			children = (
 				CF06CCF1216CA44B009C22CB /* OrderSoupOC */,
 				CF06CD0A216CA44E009C22CB /* OrderSoupOCTests */,
+				CF06CD2F216DAAD8009C22CB /* OrderSoupKit */,
+				CF06CD3C216DAAD9009C22CB /* OrderSoupKitTests */,
 				CF06CCF0216CA44B009C22CB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +149,8 @@
 			children = (
 				CF06CCEF216CA44B009C22CB /* OrderSoupOC.app */,
 				CF06CD07216CA44E009C22CB /* OrderSoupOCTests.xctest */,
+				CF06CD2E216DAAD7009C22CB /* OrderSoupKit.framework */,
+				CF06CD36216DAAD8009C22CB /* OrderSoupKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +195,8 @@
 		CF06CD18216CA5B9009C22CB /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				CF06CD26216DA635009C22CB /* OSSiriAuthorizationManager.h */,
+				CF06CD27216DA635009C22CB /* OSSiriAuthorizationManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -163,7 +235,37 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CF06CD2F216DAAD8009C22CB /* OrderSoupKit */ = {
+			isa = PBXGroup;
+			children = (
+				CF06CD30216DAAD8009C22CB /* OrderSoupKit.h */,
+				CF06CD31216DAAD8009C22CB /* Info.plist */,
+			);
+			path = OrderSoupKit;
+			sourceTree = "<group>";
+		};
+		CF06CD3C216DAAD9009C22CB /* OrderSoupKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF06CD3D216DAAD9009C22CB /* OrderSoupKitTests.m */,
+				CF06CD3F216DAAD9009C22CB /* Info.plist */,
+			);
+			path = OrderSoupKitTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CF06CD29216DAAD7009C22CB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF06CD40216DAAD9009C22CB /* OrderSoupKit.h in Headers */,
+				CF06CD4E216DAC65009C22CB /* OSSiriAuthorizationManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		CF06CCEE216CA44B009C22CB /* OrderSoupOC */ = {
@@ -173,10 +275,12 @@
 				CF06CCEB216CA44B009C22CB /* Sources */,
 				CF06CCEC216CA44B009C22CB /* Frameworks */,
 				CF06CCED216CA44B009C22CB /* Resources */,
+				CF06CD48216DAAD9009C22CB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CF06CD42216DAAD9009C22CB /* PBXTargetDependency */,
 			);
 			name = OrderSoupOC;
 			productName = OrderSoupOC;
@@ -201,6 +305,43 @@
 			productReference = CF06CD07216CA44E009C22CB /* OrderSoupOCTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CF06CD2D216DAAD7009C22CB /* OrderSoupKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF06CD45216DAAD9009C22CB /* Build configuration list for PBXNativeTarget "OrderSoupKit" */;
+			buildPhases = (
+				CF06CD29216DAAD7009C22CB /* Headers */,
+				CF06CD2A216DAAD7009C22CB /* Sources */,
+				CF06CD2B216DAAD7009C22CB /* Frameworks */,
+				CF06CD2C216DAAD7009C22CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrderSoupKit;
+			productName = OrderSoupKit;
+			productReference = CF06CD2E216DAAD7009C22CB /* OrderSoupKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CF06CD35216DAAD8009C22CB /* OrderSoupKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF06CD49216DAAD9009C22CB /* Build configuration list for PBXNativeTarget "OrderSoupKitTests" */;
+			buildPhases = (
+				CF06CD32216DAAD8009C22CB /* Sources */,
+				CF06CD33216DAAD8009C22CB /* Frameworks */,
+				CF06CD34216DAAD8009C22CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF06CD39216DAAD9009C22CB /* PBXTargetDependency */,
+				CF06CD3B216DAAD9009C22CB /* PBXTargetDependency */,
+			);
+			name = OrderSoupKitTests;
+			productName = OrderSoupKitTests;
+			productReference = CF06CD36216DAAD8009C22CB /* OrderSoupKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -222,6 +363,13 @@
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = CF06CCEE216CA44B009C22CB;
 					};
+					CF06CD2D216DAAD7009C22CB = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					CF06CD35216DAAD8009C22CB = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = CF06CCEE216CA44B009C22CB;
+					};
 				};
 			};
 			buildConfigurationList = CF06CCEA216CA44B009C22CB /* Build configuration list for PBXProject "OrderSoupOC" */;
@@ -239,6 +387,8 @@
 			targets = (
 				CF06CCEE216CA44B009C22CB /* OrderSoupOC */,
 				CF06CD06216CA44E009C22CB /* OrderSoupOCTests */,
+				CF06CD2D216DAAD7009C22CB /* OrderSoupKit */,
+				CF06CD35216DAAD8009C22CB /* OrderSoupKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -255,6 +405,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CF06CD05216CA44E009C22CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF06CD2C216DAAD7009C22CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF06CD34216DAAD8009C22CB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -284,6 +448,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CF06CD2A216DAAD7009C22CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF06CD4D216DAAFE009C22CB /* OSSiriAuthorizationManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF06CD32216DAAD8009C22CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF06CD3E216DAAD9009C22CB /* OrderSoupKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +471,21 @@
 			isa = PBXTargetDependency;
 			target = CF06CCEE216CA44B009C22CB /* OrderSoupOC */;
 			targetProxy = CF06CD08216CA44E009C22CB /* PBXContainerItemProxy */;
+		};
+		CF06CD39216DAAD9009C22CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF06CD2D216DAAD7009C22CB /* OrderSoupKit */;
+			targetProxy = CF06CD38216DAAD9009C22CB /* PBXContainerItemProxy */;
+		};
+		CF06CD3B216DAAD9009C22CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF06CCEE216CA44B009C22CB /* OrderSoupOC */;
+			targetProxy = CF06CD3A216DAAD9009C22CB /* PBXContainerItemProxy */;
+		};
+		CF06CD42216DAAD9009C22CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF06CD2D216DAAD7009C22CB /* OrderSoupKit */;
+			targetProxy = CF06CD41216DAAD9009C22CB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -500,6 +695,96 @@
 			};
 			name = Release;
 		};
+		CF06CD46216DAAD9009C22CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = OrderSoupKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dawn.OrderSoupKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CF06CD47216DAAD9009C22CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = OrderSoupKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dawn.OrderSoupKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CF06CD4A216DAAD9009C22CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OrderSoupKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dawn.OrderSoupKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrderSoupOC.app/OrderSoupOC";
+			};
+			name = Debug;
+		};
+		CF06CD4B216DAAD9009C22CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OrderSoupKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dawn.OrderSoupKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrderSoupOC.app/OrderSoupOC";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -526,6 +811,24 @@
 			buildConfigurations = (
 				CF06CD14216CA44E009C22CB /* Debug */,
 				CF06CD15216CA44E009C22CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF06CD45216DAAD9009C22CB /* Build configuration list for PBXNativeTarget "OrderSoupKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF06CD46216DAAD9009C22CB /* Debug */,
+				CF06CD47216DAAD9009C22CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF06CD49216DAAD9009C22CB /* Build configuration list for PBXNativeTarget "OrderSoupKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF06CD4A216DAAD9009C22CB /* Debug */,
+				CF06CD4B216DAAD9009C22CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
