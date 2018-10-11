@@ -20,6 +20,13 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSSiriUsageDescription</key>
+	<string>siri usage description</string>
+	<key>NSUserActivityTypes</key>
+	<array>
+		<string>OrderSoupIntent</string>
+		<string>com.orderSoupOC.createAUserActivity</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -40,12 +47,6 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>NSSiriUsageDescription</key>
-	<string>siri usage description</string>
-	<key>NSUserActivityTypes</key>
-	<array>
-		<string>com.orderSoupOC.createAUserActivity</string>
 	</array>
 </dict>
 </plist>
