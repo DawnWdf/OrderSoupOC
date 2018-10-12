@@ -54,9 +54,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03m-NX-jAV">
-                                <rect key="frame" x="16" y="573" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03m-NX-jAV">
+                                <rect key="frame" x="16" y="573" width="340" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="340" id="eBk-78-pSu"/>
+                                </constraints>
                                 <state key="normal" title="Done"/>
                                 <connections>
                                     <action selector="doneWithVC:" destination="KHv-gs-oNB" eventType="touchUpInside" id="I4F-Mz-O6v"/>
@@ -64,12 +66,50 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="03m-NX-jAV" firstAttribute="leading" secondItem="vs6-dx-6Lb" secondAttribute="leadingMargin" id="N0g-p9-Pr0"/>
+                            <constraint firstItem="9ah-18-j8D" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="03m-NX-jAV" secondAttribute="trailing" symbolic="YES" id="cVs-XD-O4x"/>
+                            <constraint firstItem="03m-NX-jAV" firstAttribute="top" secondItem="9ah-18-j8D" secondAttribute="top" constant="553" id="h9X-TH-fif"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9ah-18-j8D"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yLM-Ek-3Gl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1872.8" y="-40.029985007496258"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="3t4-1z-mZM">
+            <objects>
+                <viewController storyboardIdentifier="osDetail" id="7J9-O7-4wE" customClass="OSDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A6w-gC-UbV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocr-aV-9s4">
+                                <rect key="frame" x="16" y="577" width="340" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="340" id="cwy-zq-rln"/>
+                                </constraints>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="dismiss:" destination="7J9-O7-4wE" eventType="touchUpInside" id="kj2-Kj-urT"/>
+                                    <action selector="doneWithVC:" destination="KHv-gs-oNB" eventType="touchUpInside" id="bjp-7c-TGZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ocr-aV-9s4" firstAttribute="top" secondItem="RZv-kJ-VCn" secondAttribute="top" constant="557" id="JE1-h1-Tjv"/>
+                            <constraint firstItem="Ocr-aV-9s4" firstAttribute="leading" secondItem="A6w-gC-UbV" secondAttribute="leadingMargin" id="K3T-Il-6Bs"/>
+                            <constraint firstItem="RZv-kJ-VCn" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ocr-aV-9s4" secondAttribute="trailing" symbolic="YES" id="aTV-kd-P9E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RZv-kJ-VCn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lzl-tE-6Km" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2555" y="-39"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Cic-mG-yZS">

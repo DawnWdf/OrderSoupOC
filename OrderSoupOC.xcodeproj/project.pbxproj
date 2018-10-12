@@ -21,12 +21,10 @@
 		CF06CD40216DAAD9009C22CB /* OrderSoupKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CF06CD30216DAAD8009C22CB /* OrderSoupKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CF06CD43216DAAD9009C22CB /* OrderSoupKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF06CD2E216DAAD7009C22CB /* OrderSoupKit.framework */; };
 		CF06CD44216DAAD9009C22CB /* OrderSoupKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF06CD2E216DAAD7009C22CB /* OrderSoupKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CF06CD4D216DAAFE009C22CB /* OSSiriAuthorizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD27216DA635009C22CB /* OSSiriAuthorizationManager.m */; };
 		CF06CD58216DFB4F009C22CB /* OrderSoupIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD56216DFA49009C22CB /* OrderSoupIntentHandler.m */; };
 		CF06CD60216E00B8009C22CB /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD50216DF446009C22CB /* Intents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
 		CF06CD61216E017F009C22CB /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD50216DF446009C22CB /* Intents.intentdefinition */; };
 		CF06CD65216E0429009C22CB /* OSShareAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF06CD62216E02DC009C22CB /* OSShareAssets.xcassets */; };
-		CF06CD66216E06F7009C22CB /* OSSiriAuthorizationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CF06CD26216DA635009C22CB /* OSSiriAuthorizationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CF06CD7B216EEABB009C22CB /* OrderSoupIntentHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = CF06CD55216DFA49009C22CB /* OrderSoupIntentHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CF06CD85216F3E02009C22CB /* OSOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD80216F26FB009C22CB /* OSOrder.m */; };
 		CF06CD86216F3E02009C22CB /* OSSoup.m in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD83216F2A99009C22CB /* OSSoup.m */; };
@@ -41,6 +39,11 @@
 		CF06CDA7217047E0009C22CB /* OrderSoupExtensionUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CF06CD99217047E0009C22CB /* OrderSoupExtensionUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CF06CDAA217047E0009C22CB /* OrderSoupExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CF06CD8F217047DE009C22CB /* OrderSoupExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CF06CDB5217053D6009C22CB /* OSOrder+intent.m in Sources */ = {isa = PBXBuildFile; fileRef = CF06CDB32170516C009C22CB /* OSOrder+intent.m */; };
+		CF06CDB6217076FC009C22CB /* OSOrder+intent.h in Headers */ = {isa = PBXBuildFile; fileRef = CF06CDB22170516C009C22CB /* OSOrder+intent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF06CDB9217079A2009C22CB /* OSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF06CDB8217079A2009C22CB /* OSDetailViewController.m */; };
+		CF06CDBA21707CDC009C22CB /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD50216DF446009C22CB /* Intents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
+		CF06CDBB21707CE6009C22CB /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD50216DF446009C22CB /* Intents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
+		CF06CDC121708166009C22CB /* OSSiriAuthorizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF06CDC021708165009C22CB /* OSSiriAuthorizationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,8 +136,6 @@
 		CF06CD21216CA612009C22CB /* OSListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSListTableViewController.m; sourceTree = "<group>"; };
 		CF06CD23216CA813009C22CB /* OSAddOneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSAddOneViewController.h; sourceTree = "<group>"; };
 		CF06CD24216CA813009C22CB /* OSAddOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSAddOneViewController.m; sourceTree = "<group>"; };
-		CF06CD26216DA635009C22CB /* OSSiriAuthorizationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSSiriAuthorizationManager.h; sourceTree = "<group>"; };
-		CF06CD27216DA635009C22CB /* OSSiriAuthorizationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSSiriAuthorizationManager.m; sourceTree = "<group>"; };
 		CF06CD2E216DAAD7009C22CB /* OrderSoupKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OrderSoupKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF06CD30216DAAD8009C22CB /* OrderSoupKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderSoupKit.h; sourceTree = "<group>"; };
 		CF06CD31216DAAD8009C22CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -163,6 +164,12 @@
 		CF06CDA4217047E0009C22CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF06CDB22170516C009C22CB /* OSOrder+intent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OSOrder+intent.h"; sourceTree = "<group>"; };
 		CF06CDB32170516C009C22CB /* OSOrder+intent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OSOrder+intent.m"; sourceTree = "<group>"; };
+		CF06CDB7217079A2009C22CB /* OSDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSDetailViewController.h; sourceTree = "<group>"; };
+		CF06CDB8217079A2009C22CB /* OSDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSDetailViewController.m; sourceTree = "<group>"; };
+		CF06CDBC21707D83009C22CB /* OrderSoupExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OrderSoupExtension.entitlements; sourceTree = "<group>"; };
+		CF06CDBD21707D90009C22CB /* OrderSoupExtensionUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OrderSoupExtensionUI.entitlements; sourceTree = "<group>"; };
+		CF06CDBF21708165009C22CB /* OSSiriAuthorizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSiriAuthorizationManager.h; sourceTree = "<group>"; };
+		CF06CDC021708165009C22CB /* OSSiriAuthorizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSiriAuthorizationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,8 +290,6 @@
 		CF06CD18216CA5B9009C22CB /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				CF06CD26216DA635009C22CB /* OSSiriAuthorizationManager.h */,
-				CF06CD27216DA635009C22CB /* OSSiriAuthorizationManager.m */,
 				CF06CD55216DFA49009C22CB /* OrderSoupIntentHandler.h */,
 				CF06CD56216DFA49009C22CB /* OrderSoupIntentHandler.m */,
 				CF06CD7C216EFEFD009C22CB /* OrderSoupIntentManager.h */,
@@ -309,6 +314,7 @@
 		CF06CD1A216CA5B9009C22CB /* OrderSoup */ = {
 			isa = PBXGroup;
 			children = (
+				CF06CDBE21708165009C22CB /* Manager */,
 				CF06CD1B216CA5B9009C22CB /* VC */,
 				CF06CD1C216CA5B9009C22CB /* View */,
 			);
@@ -322,6 +328,8 @@
 				CF06CD21216CA612009C22CB /* OSListTableViewController.m */,
 				CF06CD23216CA813009C22CB /* OSAddOneViewController.h */,
 				CF06CD24216CA813009C22CB /* OSAddOneViewController.m */,
+				CF06CDB7217079A2009C22CB /* OSDetailViewController.h */,
+				CF06CDB8217079A2009C22CB /* OSDetailViewController.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -354,6 +362,7 @@
 		CF06CD90217047DF009C22CB /* OrderSoupExtension */ = {
 			isa = PBXGroup;
 			children = (
+				CF06CDBC21707D83009C22CB /* OrderSoupExtension.entitlements */,
 				CF06CD91217047DF009C22CB /* IntentHandler.h */,
 				CF06CD92217047DF009C22CB /* IntentHandler.m */,
 				CF06CD94217047DF009C22CB /* Info.plist */,
@@ -372,12 +381,22 @@
 		CF06CD9D217047E0009C22CB /* OrderSoupExtensionUI */ = {
 			isa = PBXGroup;
 			children = (
+				CF06CDBD21707D90009C22CB /* OrderSoupExtensionUI.entitlements */,
 				CF06CD9E217047E0009C22CB /* IntentViewController.h */,
 				CF06CD9F217047E0009C22CB /* IntentViewController.m */,
 				CF06CDA1217047E0009C22CB /* MainInterface.storyboard */,
 				CF06CDA4217047E0009C22CB /* Info.plist */,
 			);
 			path = OrderSoupExtensionUI;
+			sourceTree = "<group>";
+		};
+		CF06CDBE21708165009C22CB /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CF06CDBF21708165009C22CB /* OSSiriAuthorizationManager.h */,
+				CF06CDC021708165009C22CB /* OSSiriAuthorizationManager.m */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,8 +407,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF06CD40216DAAD9009C22CB /* OrderSoupKit.h in Headers */,
-				CF06CD66216E06F7009C22CB /* OSSiriAuthorizationManager.h in Headers */,
 				CF06CD87216F3E1B009C22CB /* OSOrder.h in Headers */,
+				CF06CDB6217076FC009C22CB /* OSOrder+intent.h in Headers */,
 				CF06CD8A216F3F2F009C22CB /* OrderSoupIntentManager.h in Headers */,
 				CF06CD88216F3E1B009C22CB /* OSSoup.h in Headers */,
 				CF06CD7B216EEABB009C22CB /* OrderSoupIntentHandler.h in Headers */,
@@ -522,6 +541,9 @@
 					CF06CCEE216CA44B009C22CB = {
 						CreatedOnToolsVersion = 10.0;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.Siri = {
 								enabled = 1;
 							};
@@ -540,9 +562,19 @@
 					};
 					CF06CD8E217047DE009C22CB = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					CF06CD98217047E0009C22CB = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -628,8 +660,10 @@
 				CF06CCF7216CA44C009C22CB /* ViewController.m in Sources */,
 				CF06CD02216CA44E009C22CB /* main.m in Sources */,
 				CF06CCF4216CA44C009C22CB /* AppDelegate.m in Sources */,
+				CF06CDC121708166009C22CB /* OSSiriAuthorizationManager.m in Sources */,
 				CF06CD25216CA813009C22CB /* OSAddOneViewController.m in Sources */,
 				CF06CD22216CA612009C22CB /* OSListTableViewController.m in Sources */,
+				CF06CDB9217079A2009C22CB /* OSDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,7 +685,6 @@
 				CF06CD86216F3E02009C22CB /* OSSoup.m in Sources */,
 				CF06CD61216E017F009C22CB /* Intents.intentdefinition in Sources */,
 				CF06CD58216DFB4F009C22CB /* OrderSoupIntentHandler.m in Sources */,
-				CF06CD4D216DAAFE009C22CB /* OSSiriAuthorizationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,6 +700,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF06CDBA21707CDC009C22CB /* Intents.intentdefinition in Sources */,
 				CF06CD93217047DF009C22CB /* IntentHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -675,6 +709,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF06CDBB21707CE6009C22CB /* Intents.intentdefinition in Sources */,
 				CF06CDA0217047E0009C22CB /* IntentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -933,6 +968,7 @@
 		CF06CD46216DAAD9009C22CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -961,6 +997,7 @@
 		CF06CD47216DAAD9009C22CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1023,6 +1060,7 @@
 		CF06CDAC217047E0009C22CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OrderSoupExtensionUI/OrderSoupExtensionUI.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = KYACQ4K486;
 				INFOPLIST_FILE = OrderSoupExtensionUI/Info.plist;
@@ -1042,6 +1080,7 @@
 		CF06CDAD217047E0009C22CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OrderSoupExtensionUI/OrderSoupExtensionUI.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = OrderSoupExtensionUI/Info.plist;
@@ -1061,6 +1100,7 @@
 		CF06CDAF217047E0009C22CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OrderSoupExtension/OrderSoupExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = KYACQ4K486;
@@ -1081,6 +1121,7 @@
 		CF06CDB0217047E0009C22CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OrderSoupExtension/OrderSoupExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";

@@ -16,6 +16,7 @@
 // "Send a message using <myApp>"
 // "<myApp> John saying hello"
 // "Search for messages in <myApp>"
+//#import <OrderSoupKit/OrderSoupKit.h>
 
 @interface IntentHandler () <INSendMessageIntentHandling, INSearchForMessagesIntentHandling, INSetMessageAttributeIntentHandling>
 
@@ -26,7 +27,9 @@
 - (id)handlerForIntent:(INIntent *)intent {
     // This is the default implementation.  If you want different objects to handle different intents,
     // you can override this and return the handler you want for that particular intent.
-    
+//    if ([intent isKindOfClass:[OrderSoupIntent class]]) {
+//        return [OrderSoupIntentHandler new];
+//    }
     return self;
 }
 

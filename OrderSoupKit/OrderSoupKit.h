@@ -16,9 +16,9 @@ FOUNDATION_EXPORT const unsigned char OrderSoupKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <OrderSoupKit/PublicHeader.h>
 
-#import "OSSiriAuthorizationManager.h"
 #import "OrderSoupIntentHandler.h"
 #import "OrderSoupIntentManager.h"
 #import "OSOrder.h"
+#import "OSOrder+intent.h"
 
 

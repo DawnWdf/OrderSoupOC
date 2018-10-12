@@ -6,14 +6,16 @@
 //  Copyright © 2018年 Dawn Wang. All rights reserved.
 //
 
-#import <OrderSoupKit/OrderSoupKit.h>
-//#import "OrderSoupIntent.h"
+#import "OSOrder.h"///</OrderSoupKit.h>""
+#import "OrderSoupIntent.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface OSOrder (intent)
 
-//@property (nonatomic, strong,readonly) OrderSoupIntent *intent;
+@property (nonatomic, strong,readonly) OrderSoupIntent *intent;
+
+- (void)configOrderWith:(OrderSoupIntent *)intent;
 
 @end
 

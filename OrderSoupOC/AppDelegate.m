@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import <OrderSoupKit/OSSiriAuthorizationManager.h>
-
+#import <OrderSoupKit/OrderSoupKit.h>
+#import "OSSiriAuthorizationManager.h"
 @interface AppDelegate ()
 
 @end
@@ -67,7 +67,12 @@
 - (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void(^)(NSArray<id<UIUserActivityRestoring>> * __nullable restorableObjects))restorationHandler NS_AVAILABLE_IOS(8_0) {
     
     if ([userActivity.activityType isEqualToString:@"OrderSoupIntent"]){
-        NSLog(@"给了一个预定蛋花汤的回调");
+        OSOrder *order = [[OSOrder alloc] init];
+        INInteraction *interaction = userActivity.interaction;
+        if (interaction) {
+            [order configOrderWith:(OrderSoupIntent *)interaction.intent];
+        }
+        //拿到了order可以干别的了
     }
     
 
