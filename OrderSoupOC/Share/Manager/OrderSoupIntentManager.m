@@ -8,6 +8,7 @@
 
 #import "OrderSoupIntentManager.h"
 
+//#import "OSOrder+intent.h"
 
 #import "OrderSoupIntent.h"
 
@@ -36,13 +37,13 @@
  */
 - (void)donateShortcutWith:(OSOrder *)order {
     //创建一个intent,并给对应的参数赋值
-    OrderSoupIntent *osIntent = [[OrderSoupIntent alloc] init];
+    OrderSoupIntent *osIntent =  [[OrderSoupIntent alloc] init];
     osIntent.quantity = @(order.quantity);
     INObject *soupObject = [[INObject alloc] initWithIdentifier:order.soupMenuItem.soupShortcutNameKey displayString:order.soupMenuItem.name];
     osIntent.soup = soupObject;
- 
+
     osIntent.options = order.options;
-    
+
     [osIntent setImage:[INImage imageNamed:@"box-1"] forParameterNamed:order.soupMenuItem.soupShortcutNameKey] ;
     osIntent.suggestedInvocationPhrase = @"来一碗鸡蛋汤";
     
