@@ -19,7 +19,7 @@
     
     resultIntent.options = self.options;
     
-    [resultIntent setImage:[INImage imageNamed:self.soupMenuItem.imageName] forParameterNamed:self.soupMenuItem.soupShortcutNameKey] ;
+    [resultIntent setImage:[INImage imageNamed:self.soupMenuItem.imageName] forParameterNamed:@"soup"] ;
     return resultIntent;
 }
 

@@ -44,6 +44,7 @@
 		CF06CDBA21707CDC009C22CB /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD50216DF446009C22CB /* Intents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
 		CF06CDBB21707CE6009C22CB /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD50216DF446009C22CB /* Intents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
 		CF06CDC121708166009C22CB /* OSSiriAuthorizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF06CDC021708165009C22CB /* OSSiriAuthorizationManager.m */; };
+		CF06CDC421708555009C22CB /* OrderSoupKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF06CD2E216DAAD7009C22CB /* OrderSoupKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,6 +208,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF06CDC421708555009C22CB /* OrderSoupKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

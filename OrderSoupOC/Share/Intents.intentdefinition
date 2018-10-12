@@ -90,7 +90,7 @@
 				<array>
 					<dict>
 						<key>INIntentResponseCodeFormatString</key>
-						<string></string>
+						<string>您下的订单失败了</string>
 						<key>INIntentResponseCodeFormatStringID</key>
 						<string>lTmnJN</string>
 						<key>INIntentResponseCodeName</key>
@@ -100,7 +100,7 @@
 					</dict>
 					<dict>
 						<key>INIntentResponseCodeFormatString</key>
-						<string></string>
+						<string>订单已经生成，您预定的${soup}会在${waitTime}后制作完成</string>
 						<key>INIntentResponseCodeFormatStringID</key>
 						<string>OA6yjQ</string>
 						<key>INIntentResponseCodeName</key>
@@ -108,11 +108,46 @@
 						<key>INIntentResponseCodeSuccess</key>
 						<true/>
 					</dict>
+					<dict>
+						<key>INIntentResponseCodeFormatString</key>
+						<string>糟了，外完了！</string>
+						<key>INIntentResponseCodeFormatStringID</key>
+						<string>0TbvBe</string>
+						<key>INIntentResponseCodeName</key>
+						<string>failureOutOfStock</string>
+						<key>INIntentResponseCodeSuccess</key>
+						<false/>
+					</dict>
 				</array>
 				<key>INIntentResponseLastParameterTag</key>
-				<integer>0</integer>
+				<integer>3</integer>
 				<key>INIntentResponseParameters</key>
-				<array/>
+				<array>
+					<dict>
+						<key>INIntentResponseParameterDisplayPriority</key>
+						<integer>1</integer>
+						<key>INIntentResponseParameterName</key>
+						<string>soup</string>
+						<key>INIntentResponseParameterSupportsMultipleValues</key>
+						<false/>
+						<key>INIntentResponseParameterTag</key>
+						<integer>2</integer>
+						<key>INIntentResponseParameterType</key>
+						<string>Object</string>
+					</dict>
+					<dict>
+						<key>INIntentResponseParameterDisplayPriority</key>
+						<integer>2</integer>
+						<key>INIntentResponseParameterName</key>
+						<string>waitTime</string>
+						<key>INIntentResponseParameterSupportsMultipleValues</key>
+						<false/>
+						<key>INIntentResponseParameterTag</key>
+						<integer>3</integer>
+						<key>INIntentResponseParameterType</key>
+						<string>String</string>
+					</dict>
+				</array>
 			</dict>
 			<key>INIntentRestrictions</key>
 			<integer>1</integer>

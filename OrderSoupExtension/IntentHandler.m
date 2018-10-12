@@ -16,7 +16,7 @@
 // "Send a message using <myApp>"
 // "<myApp> John saying hello"
 // "Search for messages in <myApp>"
-//#import <OrderSoupKit/OrderSoupKit.h>
+#import <OrderSoupKit/OrderSoupKit.h>
 
 @interface IntentHandler () <INSendMessageIntentHandling, INSearchForMessagesIntentHandling, INSetMessageAttributeIntentHandling>
 
