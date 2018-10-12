@@ -18,5 +18,7 @@ FOUNDATION_EXPORT const unsigned char OrderSoupKitVersionString[];
 
 #import "OSSiriAuthorizationManager.h"
 #import "OrderSoupIntentHandler.h"
+#import "OrderSoupIntentManager.h"
+#import "OSOrder.h"
 
 

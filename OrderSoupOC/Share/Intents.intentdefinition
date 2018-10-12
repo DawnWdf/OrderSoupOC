@@ -24,7 +24,7 @@
 			<key>INIntentDescriptionID</key>
 			<string>zKH07y</string>
 			<key>INIntentLastParameterTag</key>
-			<integer>7</integer>
+			<integer>9</integer>
 			<key>INIntentName</key>
 			<string>OrderSoup</string>
 			<key>INIntentParameterCombinations</key>
@@ -40,7 +40,7 @@
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>订${quantity}份${soup},${options}</string>
+					<string>订${quantity}份${soup},配${options}的</string>
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>QELPOh</string>
 				</dict>
@@ -77,11 +77,11 @@
 					<key>INIntentParameterName</key>
 					<string>options</string>
 					<key>INIntentParameterSupportsMultipleValues</key>
-					<true/>
+					<false/>
 					<key>INIntentParameterTag</key>
-					<integer>7</integer>
+					<integer>9</integer>
 					<key>INIntentParameterType</key>
-					<string>Object</string>
+					<string>String</string>
 				</dict>
 			</array>
 			<key>INIntentResponse</key>

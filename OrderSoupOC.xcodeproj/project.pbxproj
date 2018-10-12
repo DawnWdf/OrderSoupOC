@@ -22,13 +22,18 @@
 		CF06CD43216DAAD9009C22CB /* OrderSoupKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF06CD2E216DAAD7009C22CB /* OrderSoupKit.framework */; };
 		CF06CD44216DAAD9009C22CB /* OrderSoupKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF06CD2E216DAAD7009C22CB /* OrderSoupKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CF06CD4D216DAAFE009C22CB /* OSSiriAuthorizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD27216DA635009C22CB /* OSSiriAuthorizationManager.m */; };
-		CF06CD57216DFA49009C22CB /* OrderSoupIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD56216DFA49009C22CB /* OrderSoupIntentHandler.m */; };
 		CF06CD58216DFB4F009C22CB /* OrderSoupIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD56216DFA49009C22CB /* OrderSoupIntentHandler.m */; };
-		CF06CD60216E00B8009C22CB /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD50216DF446009C22CB /* Intents.intentdefinition */; settings = {ATTRIBUTES = (codegen, ); }; };
+		CF06CD60216E00B8009C22CB /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD50216DF446009C22CB /* Intents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
 		CF06CD61216E017F009C22CB /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD50216DF446009C22CB /* Intents.intentdefinition */; };
 		CF06CD65216E0429009C22CB /* OSShareAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF06CD62216E02DC009C22CB /* OSShareAssets.xcassets */; };
 		CF06CD66216E06F7009C22CB /* OSSiriAuthorizationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CF06CD26216DA635009C22CB /* OSSiriAuthorizationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CF06CD7B216EEABB009C22CB /* OrderSoupIntentHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = CF06CD55216DFA49009C22CB /* OrderSoupIntentHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF06CD85216F3E02009C22CB /* OSOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD80216F26FB009C22CB /* OSOrder.m */; };
+		CF06CD86216F3E02009C22CB /* OSSoup.m in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD83216F2A99009C22CB /* OSSoup.m */; };
+		CF06CD87216F3E1B009C22CB /* OSOrder.h in Headers */ = {isa = PBXBuildFile; fileRef = CF06CD7F216F26FB009C22CB /* OSOrder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF06CD88216F3E1B009C22CB /* OSSoup.h in Headers */ = {isa = PBXBuildFile; fileRef = CF06CD82216F2A99009C22CB /* OSSoup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF06CD89216F3EF8009C22CB /* OrderSoupIntentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD7D216EFEFD009C22CB /* OrderSoupIntentManager.m */; };
+		CF06CD8A216F3F2F009C22CB /* OrderSoupIntentManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CF06CD7C216EFEFD009C22CB /* OrderSoupIntentManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +112,12 @@
 		CF06CD55216DFA49009C22CB /* OrderSoupIntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderSoupIntentHandler.h; sourceTree = "<group>"; };
 		CF06CD56216DFA49009C22CB /* OrderSoupIntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderSoupIntentHandler.m; sourceTree = "<group>"; };
 		CF06CD62216E02DC009C22CB /* OSShareAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = OSShareAssets.xcassets; sourceTree = "<group>"; };
+		CF06CD7C216EFEFD009C22CB /* OrderSoupIntentManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderSoupIntentManager.h; sourceTree = "<group>"; };
+		CF06CD7D216EFEFD009C22CB /* OrderSoupIntentManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderSoupIntentManager.m; sourceTree = "<group>"; };
+		CF06CD7F216F26FB009C22CB /* OSOrder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSOrder.h; sourceTree = "<group>"; };
+		CF06CD80216F26FB009C22CB /* OSOrder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSOrder.m; sourceTree = "<group>"; };
+		CF06CD82216F2A99009C22CB /* OSSoup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSSoup.h; sourceTree = "<group>"; };
+		CF06CD83216F2A99009C22CB /* OSSoup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSSoup.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +222,8 @@
 				CF06CD27216DA635009C22CB /* OSSiriAuthorizationManager.m */,
 				CF06CD55216DFA49009C22CB /* OrderSoupIntentHandler.h */,
 				CF06CD56216DFA49009C22CB /* OrderSoupIntentHandler.m */,
+				CF06CD7C216EFEFD009C22CB /* OrderSoupIntentManager.h */,
+				CF06CD7D216EFEFD009C22CB /* OrderSoupIntentManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -218,6 +231,10 @@
 		CF06CD19216CA5B9009C22CB /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				CF06CD7F216F26FB009C22CB /* OSOrder.h */,
+				CF06CD80216F26FB009C22CB /* OSOrder.m */,
+				CF06CD82216F2A99009C22CB /* OSSoup.h */,
+				CF06CD83216F2A99009C22CB /* OSSoup.m */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -276,6 +293,9 @@
 			files = (
 				CF06CD40216DAAD9009C22CB /* OrderSoupKit.h in Headers */,
 				CF06CD66216E06F7009C22CB /* OSSiriAuthorizationManager.h in Headers */,
+				CF06CD87216F3E1B009C22CB /* OSOrder.h in Headers */,
+				CF06CD8A216F3F2F009C22CB /* OrderSoupIntentManager.h in Headers */,
+				CF06CD88216F3E1B009C22CB /* OSSoup.h in Headers */,
 				CF06CD7B216EEABB009C22CB /* OrderSoupIntentHandler.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,7 +473,6 @@
 				CF06CD02216CA44E009C22CB /* main.m in Sources */,
 				CF06CCF4216CA44C009C22CB /* AppDelegate.m in Sources */,
 				CF06CD25216CA813009C22CB /* OSAddOneViewController.m in Sources */,
-				CF06CD57216DFA49009C22CB /* OrderSoupIntentHandler.m in Sources */,
 				CF06CD22216CA612009C22CB /* OSListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,6 +489,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF06CD89216F3EF8009C22CB /* OrderSoupIntentManager.m in Sources */,
+				CF06CD85216F3E02009C22CB /* OSOrder.m in Sources */,
+				CF06CD86216F3E02009C22CB /* OSSoup.m in Sources */,
 				CF06CD61216E017F009C22CB /* Intents.intentdefinition in Sources */,
 				CF06CD58216DFB4F009C22CB /* OrderSoupIntentHandler.m in Sources */,
 				CF06CD4D216DAAFE009C22CB /* OSSiriAuthorizationManager.m in Sources */,

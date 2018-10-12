@@ -65,6 +65,11 @@
 // invoked with the user activity. Invoking the restorationHandler is optional. It may be copied and invoked later, and it will bounce to the main thread to complete its work and call
 // restoreUserActivityState on all objects.
 - (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void(^)(NSArray<id<UIUserActivityRestoring>> * __nullable restorableObjects))restorationHandler NS_AVAILABLE_IOS(8_0) {
+    
+    if ([userActivity.activityType isEqualToString:@"OrderSoupIntent"]){
+        NSLog(@"给了一个预定蛋花汤的回调");
+    }
+    
 
     restorationHandler([(UINavigationController *)self.window.rootViewController viewControllers]);
     return YES;

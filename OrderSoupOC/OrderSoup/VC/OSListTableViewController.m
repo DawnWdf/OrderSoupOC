@@ -7,6 +7,7 @@
 //
 
 #import "OSListTableViewController.h"
+#import <OrderSoupKit/OrderSoupKit.h>
 
 @interface OSListTableViewController ()
 
@@ -24,6 +25,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.historyLists = [self cachHistoryData];
 }
 
 #pragma mark - Table view data source
@@ -41,45 +43,21 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
     // Configure the cell...
+    OSOrder *order = [self.historyLists objectAtIndex:indexPath.row];
+    cell.imageView.image = [UIImage imageNamed:order.soupMenuItem.imageName];
+
     
-    
+    cell.textLabel.text = [NSString stringWithFormat:@"%ld份%@，配%@的",(long)order.quantity,order.soupMenuItem.name,order.options.description];
+    cell.textLabel.numberOfLines = 0;
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    OSOrder *order = [self.historyLists objectAtIndex:indexPath.row];
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+    [[OrderSoupIntentManager shareManager] donateShortcutWith:order];
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 /*
 #pragma mark - Navigation
@@ -91,4 +69,20 @@
 }
 */
 
+
+- (NSArray *)cachHistoryData {
+    OSOrder *order = [[OSOrder alloc] init];
+    order.quantity = 1;
+    OSSoup *soup = [[OSSoup alloc] init];
+    soup.imageName = @"box-1";
+    soup.name = @"鸡蛋汤";
+    soup.price = 3.5;
+    soup.isAvailabel = YES;
+    soup.isDailySpecial = YES;
+    soup.soupShortcutNameKey = @"蛋花汤的唯一标识";
+    order.soupMenuItem = soup;
+    order.options = @"西红柿";
+    order.uuidString = @"订单的唯一标识";
+    return @[order];
+}
 @end
