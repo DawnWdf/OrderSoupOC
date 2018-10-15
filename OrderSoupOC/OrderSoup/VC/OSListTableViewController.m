@@ -79,7 +79,7 @@
     soup.price = 3.5;
     soup.isAvailabel = YES;
     soup.isDailySpecial = YES;
-    soup.soupShortcutNameKey = @"蛋花汤的唯一标识";
+    soup.soupShortcutNameKey = @"蛋花汤";
     order.soupMenuItem = soup;
     order.options = @"西红柿";
     order.uuidString = @"订单的唯一标识";

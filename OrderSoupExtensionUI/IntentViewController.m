@@ -27,6 +27,11 @@
 }
 
 #pragma mark - INUIHostedViewControlling
+- (void)configureWithInteraction:(INInteraction *)interaction context:(INUIHostedViewContext)context completion:(void (^)(CGSize desiredSize))completion {
+    if (completion) {
+        completion(CGSizeMake([self desiredSize].width, 200));
+    }
+}
 
 // Prepare your view controller for the interaction to handle.
 - (void)configureViewForParameters:(NSSet <INParameter *> *)parameters ofInteraction:(INInteraction *)interaction interactiveBehavior:(INUIInteractiveBehavior)interactiveBehavior context:(INUIHostedViewContext)context completion:(void (^)(BOOL success, NSSet <INParameter *> *configuredParameters, CGSize desiredSize))completion {
