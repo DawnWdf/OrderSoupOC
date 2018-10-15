@@ -33,7 +33,7 @@
     // Do configuration here, including preparing views and calculating a desired size for presentation.
     
     if (completion) {
-        completion(YES, parameters, [self desiredSize]);
+        completion(YES, parameters, CGSizeMake([self desiredSize].width, 200));
     }
 }
 
