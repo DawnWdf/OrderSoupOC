@@ -14,7 +14,7 @@
 
 @implementation OrderSoupIntentManager
 
-+ (instancetype)shareManager {
++ (instancetype)orderSoupIntent {
     static OrderSoupIntentManager *manager ;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

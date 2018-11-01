@@ -17,12 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGS-cK-w3o">
-                                <rect key="frame" x="111" y="69" width="31" height="30"/>
-                                <state key="normal" title="确定"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="确定么" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyW-Vn-v7P">
-                                <rect key="frame" x="44" y="20" width="52" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你现在正在用自定义的UI来订汤，阿汤哥说。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2d-so-VuA">
+                                <rect key="frame" x="16" y="20" width="288" height="110"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -30,21 +26,22 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="4PN-XC-lEE" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vGS-cK-w3o" secondAttribute="trailing" symbolic="YES" id="FGW-LP-tdf"/>
-                            <constraint firstItem="4PN-XC-lEE" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QyW-Vn-v7P" secondAttribute="trailing" symbolic="YES" id="HX9-uH-fYl"/>
-                            <constraint firstItem="vGS-cK-w3o" firstAttribute="top" secondItem="4PN-XC-lEE" secondAttribute="top" constant="69" id="Lfo-nw-4JI"/>
-                            <constraint firstItem="QyW-Vn-v7P" firstAttribute="leading" secondItem="4PN-XC-lEE" secondAttribute="leading" constant="44" id="Mc7-eS-OVu"/>
-                            <constraint firstItem="vGS-cK-w3o" firstAttribute="leading" secondItem="4PN-XC-lEE" secondAttribute="leading" constant="111" id="nhI-ea-A9G"/>
-                            <constraint firstItem="QyW-Vn-v7P" firstAttribute="top" secondItem="zMn-AG-sqS" secondAttribute="top" constant="20" symbolic="YES" id="zB5-xw-Xgj"/>
+                            <constraint firstItem="Z2d-so-VuA" firstAttribute="leading" secondItem="4PN-XC-lEE" secondAttribute="leading" constant="16" id="Rzs-cu-B7x"/>
+                            <constraint firstItem="4PN-XC-lEE" firstAttribute="bottom" secondItem="Z2d-so-VuA" secondAttribute="bottom" constant="20" id="Vjd-5W-GxR"/>
+                            <constraint firstItem="Z2d-so-VuA" firstAttribute="top" secondItem="4PN-XC-lEE" secondAttribute="top" constant="20" id="b2a-Uh-MTY"/>
+                            <constraint firstItem="4PN-XC-lEE" firstAttribute="trailing" secondItem="Z2d-so-VuA" secondAttribute="trailing" constant="16" id="yyg-Jg-AOC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4PN-XC-lEE"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="150"/>
+                    <connections>
+                        <outlet property="MessageLabel" destination="Z2d-so-VuA" id="MFF-zr-UVv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-198" y="98"/>
+            <point key="canvasLocation" x="-566.39999999999998" y="40.479760119940032"/>
         </scene>
     </scenes>
 </document>

@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface OrderSoupIntentManager : NSObject
 
-+ (instancetype)shareManager;
++ (instancetype)orderSoupIntent;
 /**
  donate一个捷径
  根据order生成一个intent，然后根据 intent生成一个捷径并donate

@@ -7,6 +7,7 @@
 //
 
 #import "IntentViewController.h"
+#import <Intents/Intents.h>
 
 // As an example, this extension's Info.plist has been configured to handle interactions for INSendMessageIntent.
 // You will want to replace this or add other intents as appropriate.
@@ -16,6 +17,7 @@
 // "Send a message using <myApp>"
 
 @interface IntentViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *MessageLabel;
 
 @end
 
@@ -36,7 +38,9 @@
 // Prepare your view controller for the interaction to handle.
 - (void)configureViewForParameters:(NSSet <INParameter *> *)parameters ofInteraction:(INInteraction *)interaction interactiveBehavior:(INUIInteractiveBehavior)interactiveBehavior context:(INUIHostedViewContext)context completion:(void (^)(BOOL success, NSSet <INParameter *> *configuredParameters, CGSize desiredSize))completion {
     // Do configuration here, including preparing views and calculating a desired size for presentation.
-    
+    if (interaction.intentHandlingStatus == INIntentHandlingStatusSuccess) {
+        self.MessageLabel.text = @"你都定完了，那你还想怎么样";
+    }
     if (completion) {
         completion(YES, parameters, CGSizeMake([self desiredSize].width, 200));
     }

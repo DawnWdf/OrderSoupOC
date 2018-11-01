@@ -8,7 +8,7 @@
 
 #import "OSListTableViewController.h"
 #import <OrderSoupKit/OrderSoupKit.h>
-
+#import "OrderSoupOC-Swift.h"
 @interface OSListTableViewController ()
 
 @property (nonatomic, strong) NSArray *historyLists;
@@ -53,9 +53,10 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    OSDetailViewController *detail = [[OSDetailViewController alloc] init];
     OSOrder *order = [self.historyLists objectAtIndex:indexPath.row];
-
-    [[OrderSoupIntentManager shareManager] donateShortcutWith:order];
+    detail.orderDetail = order;
+    [self.navigationController pushViewController:detail animated:YES];
 }
 
 
@@ -79,7 +80,7 @@
     soup.price = 3.5;
     soup.isAvailabel = YES;
     soup.isDailySpecial = YES;
-    soup.soupShortcutNameKey = @"蛋花汤";
+    soup.soupShortcutNameKey = @"蛋花汤id";
     order.soupMenuItem = soup;
     order.options = @"西红柿";
     order.uuidString = @"订单的唯一标识";

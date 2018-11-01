@@ -25,7 +25,7 @@
 
 - (void)confirmOrderSoup:(OrderSoupIntent *)intent completion:(void (^)(OrderSoupIntentResponse *response))completion NS_SWIFT_NAME(confirm(intent:completion:)) {
     NSUserActivity *userActivity = [[NSUserActivity alloc] initWithActivityType:@"OrderSoupIntent"];
-    OrderSoupIntentResponse *response = [[OrderSoupIntentResponse alloc] initWithCode:OrderSoupIntentResponseCodeSuccess userActivity:userActivity];
+    OrderSoupIntentResponse *response = [[OrderSoupIntentResponse alloc] initWithCode:OrderSoupIntentResponseCodeReady userActivity:userActivity];
     completion(response);
 }
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48573811C2BFBBC8C9EC8CDB /* libPods-OrderSoupOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2174D449582A8EB1515AC2 /* libPods-OrderSoupOC.a */; };
 		CF06CCF4216CA44C009C22CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF06CCF3216CA44C009C22CB /* AppDelegate.m */; };
 		CF06CCF7216CA44C009C22CB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF06CCF6216CA44C009C22CB /* ViewController.m */; };
 		CF06CCFA216CA44C009C22CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF06CCF8216CA44C009C22CB /* Main.storyboard */; };
@@ -40,11 +41,15 @@
 		CF06CDAA217047E0009C22CB /* OrderSoupExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CF06CD8F217047DE009C22CB /* OrderSoupExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CF06CDB5217053D6009C22CB /* OSOrder+intent.m in Sources */ = {isa = PBXBuildFile; fileRef = CF06CDB32170516C009C22CB /* OSOrder+intent.m */; };
 		CF06CDB6217076FC009C22CB /* OSOrder+intent.h in Headers */ = {isa = PBXBuildFile; fileRef = CF06CDB22170516C009C22CB /* OSOrder+intent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CF06CDB9217079A2009C22CB /* OSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF06CDB8217079A2009C22CB /* OSDetailViewController.m */; };
 		CF06CDBA21707CDC009C22CB /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD50216DF446009C22CB /* Intents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
 		CF06CDBB21707CE6009C22CB /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CF06CD50216DF446009C22CB /* Intents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
 		CF06CDC121708166009C22CB /* OSSiriAuthorizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF06CDC021708165009C22CB /* OSSiriAuthorizationManager.m */; };
 		CF06CDC421708555009C22CB /* OrderSoupKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF06CD2E216DAAD7009C22CB /* OrderSoupKit.framework */; };
+		CF0F49572182BBB000C8A7C1 /* SelectItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0F49562182BBB000C8A7C1 /* SelectItemViewController.swift */; };
+		CF0F49592182BBC000C8A7C1 /* AddNewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0F49582182BBC000C8A7C1 /* AddNewItemViewController.swift */; };
+		CF0F495C2182BE8F00C8A7C1 /* ItemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0F495B2182BE8F00C8A7C1 /* ItemsManager.swift */; };
+		CF66A1BB217DBBC900E4862C /* OSDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF66A1BA217DBBC900E4862C /* OSDetailViewController.swift */; };
+		CF66A1C02180122D00E4862C /* RandomListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF66A1BF2180122D00E4862C /* RandomListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +124,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		90D495C475902B00B290E6E2 /* Pods-OrderSoupOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderSoupOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrderSoupOC/Pods-OrderSoupOC.release.xcconfig"; sourceTree = "<group>"; };
+		C32C661A1334231226AD589E /* Pods-OrderSoupOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderSoupOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrderSoupOC/Pods-OrderSoupOC.debug.xcconfig"; sourceTree = "<group>"; };
 		CF06CCEF216CA44B009C22CB /* OrderSoupOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderSoupOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF06CCF2216CA44C009C22CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CF06CCF3216CA44C009C22CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -165,12 +172,17 @@
 		CF06CDA4217047E0009C22CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF06CDB22170516C009C22CB /* OSOrder+intent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OSOrder+intent.h"; sourceTree = "<group>"; };
 		CF06CDB32170516C009C22CB /* OSOrder+intent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OSOrder+intent.m"; sourceTree = "<group>"; };
-		CF06CDB7217079A2009C22CB /* OSDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSDetailViewController.h; sourceTree = "<group>"; };
-		CF06CDB8217079A2009C22CB /* OSDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSDetailViewController.m; sourceTree = "<group>"; };
 		CF06CDBC21707D83009C22CB /* OrderSoupExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OrderSoupExtension.entitlements; sourceTree = "<group>"; };
 		CF06CDBD21707D90009C22CB /* OrderSoupExtensionUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OrderSoupExtensionUI.entitlements; sourceTree = "<group>"; };
 		CF06CDBF21708165009C22CB /* OSSiriAuthorizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSiriAuthorizationManager.h; sourceTree = "<group>"; };
 		CF06CDC021708165009C22CB /* OSSiriAuthorizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSiriAuthorizationManager.m; sourceTree = "<group>"; };
+		CF0F49562182BBB000C8A7C1 /* SelectItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectItemViewController.swift; sourceTree = "<group>"; };
+		CF0F49582182BBC000C8A7C1 /* AddNewItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewItemViewController.swift; sourceTree = "<group>"; };
+		CF0F495B2182BE8F00C8A7C1 /* ItemsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsManager.swift; sourceTree = "<group>"; };
+		CF66A1B9217DBBC800E4862C /* OrderSoupOC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OrderSoupOC-Bridging-Header.h"; sourceTree = "<group>"; };
+		CF66A1BA217DBBC900E4862C /* OSDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSDetailViewController.swift; sourceTree = "<group>"; };
+		CF66A1BF2180122D00E4862C /* RandomListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomListViewController.swift; sourceTree = "<group>"; };
+		DE2174D449582A8EB1515AC2 /* libPods-OrderSoupOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OrderSoupOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF06CD43216DAAD9009C22CB /* OrderSoupKit.framework in Frameworks */,
+				48573811C2BFBBC8C9EC8CDB /* libPods-OrderSoupOC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +236,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		529319D0748F002523E00687 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C32C661A1334231226AD589E /* Pods-OrderSoupOC.debug.xcconfig */,
+				90D495C475902B00B290E6E2 /* Pods-OrderSoupOC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CF06CCE6216CA44B009C22CB = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +256,7 @@
 				CF06CD9D217047E0009C22CB /* OrderSoupExtensionUI */,
 				CF06CD9A217047E0009C22CB /* Frameworks */,
 				CF06CCF0216CA44B009C22CB /* Products */,
+				529319D0748F002523E00687 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -259,6 +282,7 @@
 				CF06CCF5216CA44C009C22CB /* ViewController.h */,
 				CF06CCF6216CA44C009C22CB /* ViewController.m */,
 				CF06CCF8216CA44C009C22CB /* Main.storyboard */,
+				CF66A1BC2180121200E4862C /* RandomList */,
 				CF06CD1A216CA5B9009C22CB /* OrderSoup */,
 				CF06CD17216CA5B9009C22CB /* Share */,
 				CF06CCFB216CA44E009C22CB /* Assets.xcassets */,
@@ -330,8 +354,8 @@
 				CF06CD21216CA612009C22CB /* OSListTableViewController.m */,
 				CF06CD23216CA813009C22CB /* OSAddOneViewController.h */,
 				CF06CD24216CA813009C22CB /* OSAddOneViewController.m */,
-				CF06CDB7217079A2009C22CB /* OSDetailViewController.h */,
-				CF06CDB8217079A2009C22CB /* OSDetailViewController.m */,
+				CF66A1BA217DBBC900E4862C /* OSDetailViewController.swift */,
+				CF66A1B9217DBBC800E4862C /* OrderSoupOC-Bridging-Header.h */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -376,6 +400,7 @@
 			isa = PBXGroup;
 			children = (
 				CF06CD9B217047E0009C22CB /* IntentsUI.framework */,
+				DE2174D449582A8EB1515AC2 /* libPods-OrderSoupOC.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -401,6 +426,41 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		CF0F495A2182BE5A00C8A7C1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CF0F495B2182BE8F00C8A7C1 /* ItemsManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CF66A1BC2180121200E4862C /* RandomList */ = {
+			isa = PBXGroup;
+			children = (
+				CF0F495A2182BE5A00C8A7C1 /* Data */,
+				CF66A1BD2180121200E4862C /* VC */,
+				CF66A1BE2180121200E4862C /* View */,
+			);
+			path = RandomList;
+			sourceTree = "<group>";
+		};
+		CF66A1BD2180121200E4862C /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				CF66A1BF2180122D00E4862C /* RandomListViewController.swift */,
+				CF0F49562182BBB000C8A7C1 /* SelectItemViewController.swift */,
+				CF0F49582182BBC000C8A7C1 /* AddNewItemViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		CF66A1BE2180121200E4862C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -424,6 +484,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF06CD10216CA44E009C22CB /* Build configuration list for PBXNativeTarget "OrderSoupOC" */;
 			buildPhases = (
+				5FE20509DE87E518DE4F3CB3 /* [CP] Check Pods Manifest.lock */,
 				CF06CCEB216CA44B009C22CB /* Sources */,
 				CF06CCEC216CA44B009C22CB /* Frameworks */,
 				CF06CCED216CA44B009C22CB /* Resources */,
@@ -542,9 +603,10 @@
 				TargetAttributes = {
 					CF06CCEE216CA44B009C22CB = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.Siri = {
 								enabled = 1;
@@ -566,7 +628,7 @@
 						CreatedOnToolsVersion = 10.0;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -574,7 +636,7 @@
 						CreatedOnToolsVersion = 10.0;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -653,19 +715,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5FE20509DE87E518DE4F3CB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrderSoupOC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CF06CCEB216CA44B009C22CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CF06CD60216E00B8009C22CB /* Intents.intentdefinition in Sources */,
+				CF0F49572182BBB000C8A7C1 /* SelectItemViewController.swift in Sources */,
 				CF06CCF7216CA44C009C22CB /* ViewController.m in Sources */,
 				CF06CD02216CA44E009C22CB /* main.m in Sources */,
+				CF66A1BB217DBBC900E4862C /* OSDetailViewController.swift in Sources */,
 				CF06CCF4216CA44C009C22CB /* AppDelegate.m in Sources */,
+				CF0F495C2182BE8F00C8A7C1 /* ItemsManager.swift in Sources */,
 				CF06CDC121708166009C22CB /* OSSiriAuthorizationManager.m in Sources */,
 				CF06CD25216CA813009C22CB /* OSAddOneViewController.m in Sources */,
+				CF66A1C02180122D00E4862C /* RandomListViewController.swift in Sources */,
 				CF06CD22216CA612009C22CB /* OSListTableViewController.m in Sources */,
-				CF06CDB9217079A2009C22CB /* OSDetailViewController.m in Sources */,
+				CF0F49592182BBC000C8A7C1 /* AddNewItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -887,17 +974,21 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		CF06CD11216CA44E009C22CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C32C661A1334231226AD589E /* Pods-OrderSoupOC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = OrderSoupOC/OrderSoupOC.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = KYACQ4K486;
 				INFOPLIST_FILE = OrderSoupOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -907,17 +998,23 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gome.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = deceloperTest;
+				SWIFT_OBJC_BRIDGING_HEADER = "OrderSoupOC/OrderSoup/VC/OrderSoupOC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		CF06CD12216CA44E009C22CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90D495C475902B00B290E6E2 /* Pods-OrderSoupOC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = OrderSoupOC/OrderSoupOC.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = OrderSoupOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -927,6 +1024,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gome.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "OrderSoupOC/OrderSoup/VC/OrderSoupOC-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -934,6 +1033,7 @@
 		CF06CD14216CA44E009C22CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OrderSoupOCTests/Info.plist;
@@ -952,6 +1052,7 @@
 		CF06CD15216CA44E009C22CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OrderSoupOCTests/Info.plist;
@@ -1028,6 +1129,7 @@
 		CF06CD4A216DAAD9009C22CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OrderSoupKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1045,6 +1147,7 @@
 		CF06CD4B216DAAD9009C22CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OrderSoupKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1062,7 +1165,6 @@
 		CF06CDAC217047E0009C22CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = OrderSoupExtensionUI/OrderSoupExtensionUI.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = KYACQ4K486;
 				INFOPLIST_FILE = OrderSoupExtensionUI/Info.plist;
@@ -1082,7 +1184,6 @@
 		CF06CDAD217047E0009C22CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = OrderSoupExtensionUI/OrderSoupExtensionUI.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = OrderSoupExtensionUI/Info.plist;
@@ -1102,7 +1203,6 @@
 		CF06CDAF217047E0009C22CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = OrderSoupExtension/OrderSoupExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = KYACQ4K486;
@@ -1123,7 +1223,6 @@
 		CF06CDB0217047E0009C22CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = OrderSoupExtension/OrderSoupExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
